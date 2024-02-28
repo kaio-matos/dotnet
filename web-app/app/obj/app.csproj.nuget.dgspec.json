@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kaiodacxi/dotnet/console-app/app/app.csproj": {}
+    "/home/kaiodacxi/dotnet/web-app/app/app.csproj": {}
   },
   "projects": {
-    "/home/kaiodacxi/dotnet/console-app/app/app.csproj": {
+    "/home/kaiodacxi/dotnet/web-app/app/app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kaiodacxi/dotnet/console-app/app/app.csproj",
+        "projectUniqueName": "/home/kaiodacxi/dotnet/web-app/app/app.csproj",
         "projectName": "app",
-        "projectPath": "/home/kaiodacxi/dotnet/console-app/app/app.csproj",
+        "projectPath": "/home/kaiodacxi/dotnet/web-app/app/app.csproj",
         "packagesPath": "/home/kaiodacxi/.nuget/packages/",
-        "outputPath": "/home/kaiodacxi/dotnet/console-app/app/obj/",
+        "outputPath": "/home/kaiodacxi/dotnet/web-app/app/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kaiodacxi/.nuget/NuGet/NuGet.Config"
@@ -54,6 +54,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

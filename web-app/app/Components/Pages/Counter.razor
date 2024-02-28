@@ -1,0 +1,51 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+@if (currentCount > 3)
+{
+    <p>You win!</p>
+}
+
+<ul>
+    @foreach (var item in @items)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private Item[] items = [
+        new Item("Name"),
+        new Item("Name 1"),
+        new Item("Name 2"),
+        new Item("Name 3"),
+        new Item("Name 4"),
+    ];
+
+
+    [Parameter]
+    public int IncrementAmount { get; set; } = 1;
+
+    private void IncrementCount()
+    {
+        currentCount += IncrementAmount;
+    }
+
+    class Item {
+        public string Name { get; set; }
+
+        public Item(string name) {
+            Name = name;
+        }
+    }
+}
